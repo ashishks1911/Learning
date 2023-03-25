@@ -19,7 +19,7 @@ jobs:
         with:
           host: <VM_IP_ADDRESS>  # The IP address of the Azure VM.
           username: <VM_USERNAME>  # The username used to connect to the VM.
-          password: ${{ secrets.VM_PASSWORD }}  # The password used to connect to the VM.
+          password: ${{ secrets.SSH_PRIVATE_KEY }}  # The password used to connect to the VM.
           port: 22  # The SSH port to use.
           script: |  # The script to run on the remote machine.
             cd C:\Users\Ashish\Desktop\Build Automation\spectrum-one  # Change to the repository directory.
