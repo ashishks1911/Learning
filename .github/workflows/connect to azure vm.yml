@@ -9,13 +9,22 @@ on:
     # The workflow will be triggered when code is pushed to the main branch.
 
 jobs:
-  deploy:
+  connect-to-vm:
     runs-on: ubuntu-latest  # The job will run on an Ubuntu virtual machine.
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+         
+     #This logs in to Azure using the Azure CLI and the credentials stored in a GitHub secret named AZURE_CREDENTIALS.
+      - name: Login to Azure VM
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          
+      # This uses an SSH action to connect to the Azure VM using the private key stored in a GitHub secret named SSH_PRIVATE_KEY.
       - name: Connect to Azure VM  # A name for the step.
         uses: appleboy/ssh-action@master  # The SSH action to use.
-
         with:
           host: <VM_IP_ADDRESS>  # The IP address of the Azure VM.
           username: <VM_USERNAME>  # The username used to connect to the VM.
