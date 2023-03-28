@@ -17,10 +17,10 @@ jobs:
         uses: actions/checkout@v2
          
      #This logs in to Azure using the Azure CLI and the credentials stored in a GitHub secret named AZURE_CREDENTIALS.
-      - name: Login to Azure VM
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      #- name: Login to Azure VM
+       # uses: azure/login@v1
+        #with:
+         # creds: ${{ secrets.AZURE_CREDENTIALS }}
           
       # This uses an SSH action to connect to the Azure VM using the private key stored in a GitHub secret named SSH_PRIVATE_KEY.
       - name: Connect to Azure VM  # A name for the step.
