@@ -3,6 +3,9 @@ package org.ashish;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Code to Create Graph using adjacency list .
+ */
 public class CreateGraph {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
