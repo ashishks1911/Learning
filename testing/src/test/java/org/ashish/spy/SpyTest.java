@@ -29,7 +29,7 @@ public class SpyTest {
 
     @Test
     public void spyTestWithMockito(){
-        //spy is created on an actual object
+        //unlike mock a spy is created on an actual object
         BookRepository bookRepository = Mockito.spy(BookRepository.class);
         BookService bookService = new BookService(bookRepository);
 
