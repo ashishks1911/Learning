@@ -1,4 +1,4 @@
-package org.ashish.spy;
+package org.ashish.mock;
 
 import org.junit.Assert;
 

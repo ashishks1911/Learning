@@ -1,13 +1,13 @@
-package org.ashish.mock;
+package org.ashish.spy;
 
-import org.ashish.spy.Book;
-import org.ashish.spy.BookRepository;
+import org.ashish.mock.Book;
+import org.ashish.mock.BookRepository;
 
 public class BookRepositorySpy implements BookRepository {
     int saveCalled =0;
-    org.ashish.spy.Book lastBookAdded = null;
+    org.ashish.mock.Book lastBookAdded = null;
     @Override
-    public void save(org.ashish.spy.Book book) {
+    public void save(org.ashish.mock.Book book) {
         saveCalled++;
         lastBookAdded=book;
     }
