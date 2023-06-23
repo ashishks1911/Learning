@@ -1,7 +1,8 @@
 package org.ashish.algo;
 
 /**
- *
+ * Insertion Sort Algorithm
+ * time Complexity - c1n2 (n square) with c1 constant
  */
 public class InsertionSort {
     public static void main(String[] args) {
