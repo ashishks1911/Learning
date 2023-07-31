@@ -1,0 +1,18 @@
+
+Graph - Network of Nodes.
+Node - Nodes are known as vertex(vertices).
+Edge - Connection between the nodes.
+* Type of Edge:-
+1.Uni-Directional/Directed ( X------>Y )
+2.Bidirectional/Undirected ( X-------Y )
+
+Weight - Weight is the number or value associated with edge.It can represent time, distance, cost, etc.
+it can have any value +ve,-ve and 0 too.
+
+Size of Graph = Total no. of vertices.
+Neighbour - Adjacent nodes are Neighbours of each other.
+
+How to Store graph in memory
+(Representation of Graph in the Memory)
+
+
